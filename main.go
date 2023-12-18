@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"github.com/gin-gonic/gin"
+	"golang-blog/Routers"
+)
 
 func main() {
-	fmt.Println("hello world")
+	router := gin.Default()
+	Routers.Init(router)
 }
